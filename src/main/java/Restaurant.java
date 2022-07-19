@@ -68,5 +68,10 @@ public class Restaurant {
     public String getName() {
         return name;
     }
+    //TDD
+    //inorder to calculate the cost
+    //selected items on the amelie's cafe
+
+
 
 }

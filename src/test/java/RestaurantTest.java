@@ -65,4 +65,14 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calculate_cost_of_selected_items_on_amelie_cafe(){
+        int expected = 119+269;
+        assertEquals(expected,restaurant.calculateCost("Sweet corn soup","Vegetable lasagne"));
+    }
+    @Test
+    public void calculate_cost_of_zero_selected_items_on_amelie_cafe(){
+        assertEquals(0,restaurant.calculateCost(" "));
+    }
+
 }
