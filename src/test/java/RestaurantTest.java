@@ -72,7 +72,7 @@ class RestaurantTest {
     }
     @Test
     public void calculate_cost_of_zero_selected_items_on_amelie_cafe(){
-        assertEquals(0,restaurant.calculateCost(" "));
+        assertEquals(0,restaurant.calculateCost());
     }
 
 }

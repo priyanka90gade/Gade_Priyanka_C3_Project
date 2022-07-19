@@ -72,6 +72,14 @@ public class Restaurant {
     //inorder to calculate the cost
     //selected items on the amelie's cafe
 
+    public int calculateCost(String... choosenLists){
+      int  itemscost = 0;
+      for(String choosenName:choosenLists){
+          itemscost += findItemByName(choosenName).getPrice();
+      }
+      return itemscost;
+    }
+
 
 
 }
